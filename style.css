@@ -1,0 +1,137 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+
+.navBar{
+    width:100% ;
+    height: 75px;
+    background-color: black;
+    line-height: 5;
+    position: fixed;
+    transition: height 2s;
+    overflow: hidden;
+}
+
+
+.navBar .brand{
+   font-size: 40px;
+   line-height: 1;
+   color: white;
+   font-weight: bold;
+   float: left;
+   margin-left: 50px;
+   margin-top: 15px;
+   cursor:pointer;
+   text-align:center;
+
+}
+.navBar .menuContent{
+    float:right;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin: -12px 17px;
+}
+
+.navBar .icon{
+    float:right;
+    font-size:20px;
+    color:white;
+    display:none;
+}
+
+.navBar .menuContent:hover{  
+    color: white;
+    background-color: darkgoldenrod;
+}
+
+
+@media screen and (max-width: 600px) {
+    .navBar .menuContent{
+      display: none;
+    }
+    .navBar .icon {
+      float: right;
+      display: block;
+      margin-top: -12px ;
+      padding-right: 15px;
+    }
+    .navBar .brand{
+        margin-left: 20px;
+    }
+  }
+
+   .navBar.responsive .icon{
+    position:absolute;
+    top:0;
+    right:0;
+   }
+
+    .navBar.responsive{
+        height:350px;
+        overflow: visible;
+        opacity: 0.8;
+    }
+    
+    .navBar.responsive a {
+        float:none;
+        display:block !important;
+    }
+
+    .navBar.responsive .menuContent{
+        position: relative;
+        top: 40px;
+      }
+    
+
+
+.home-banner{
+    height: 100vh;
+    width: 100%;
+    background-image: url("https://images.adsttc.com/media/images/636c/e6a3/0036/5904/cc0b/020f/large_jpg/modus-operandi-merewether-brewery-prevalent_11.jpg?1668081362");
+     background-color: #cccccc;
+     background-repeat: no-repeat;
+     background-size: cover;
+    object-fit: contain;
+    object-position: left ;
+}
+.container-about{
+    text-align: center;
+}
+
+.container-about #about1{
+    font-size: 46px;
+    font-weight: bold;
+}
+.container-about #about2{
+    font-size: 25px;
+}
+.container-about #about3{
+    font-size: 25px;
+}
+
+.find-Brewery-Input{
+    background-color: black;
+    color:white;
+    height:200px;
+    width:100vw;
+    overflow: hidden;
+}
+.find-Brewery-Input p{
+    font-size: 25px;
+    text-align: center;
+}
+
+.find-Brewery-Input input{
+  display:block;
+  margin:0 auto;
+}
+
+.find-Brewery-Input button {
+    display: block;
+    margin: 10px auto;
+}
+
